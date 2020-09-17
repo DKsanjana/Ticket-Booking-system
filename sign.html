@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Theater Booking System</title>
+	<link rel="stylesheet" type="text/css" href="sign.css">
+ 
+<script type="text/javascript" >
+  
+  function alrt(){
+             var Nic=document.myform.nicNo.value;
+             var email=document.myform.EMail.value;
+             var uname= document.myform.Cname.value;
+             var password= document.myform.pass.value;
+             var Cpassword= document.myform.cpass.value;
+             
+
+             if(uname=="" || password=="" || Cpassword==""||Nic==""||email=="")
+             {
+                 alert("Fields are empty");
+                 
+             }
+         else if(password.length<6)
+         {
+                 alert("Password Must Be Atleast 6 Characters");
+         }
+         else if (password!=Cpassword) {
+               alert("password are different!");
+            }
+       }
+
+</script> 
+
+
+</head>
+<body>
+  <nav class="nav" id="main-nav">
+    
+    <div class="container"> 
+      	<div class="con" id="con-i">
+           
+     	   <ul class="unlist">
+    		   <li class="lis" onclick="location.href='indext.html';"><button class="btn">Home</button></li>
+           <li class="lis"><button class="btn">About</button></li>
+    	   </ul>
+        </div>
+      </div>
+    	
+  </nav>
+
+
+<header>
+<div class="frm">
+<pre>
+<form action="connect.php" name="myform" method="post" >
+            
+
+
+            NIC.no           <input type="text" size="30px" name="nicNo" id="nic">
+
+     
+            User Name        <input type="text" size="30px" name="Cname" id="uname">
+    
+
+            E-Mail           <input type="text" size="30px" min="5" name="EMail" id="email">
+
+
+            Password         <input type="Password" size="30px" min="5" name="pass" id="passwrd">
+
+
+            Confirm Password <input type="Password" size="30px" min="5" name="cpass" id="cpasswrd">
+                        
+                                  <input type="submit" value="Create" class="btn" onclick="alrt()" >                
+</form>
+</pre>
+</div>
+</header> 
+  
+  <footer>
+  	<p><br><br>
+  	     Create your account here!
+     </p>
+  </footer>
+</body>
+</html>

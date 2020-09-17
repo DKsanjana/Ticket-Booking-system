@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  animation-name: navbar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /*background-color:#343a40 ;*/
+  
+}
+
+.con{
+   padding-left: 80%;
+   
+}
+
+.btn{
+  background-color:#f2315a;
+  border: 0px;
+  /*border-color: #0275d8;*/
+  border-radius: 1.2rem;
+  color: white;
+  cursor: pointer;
+  line-height: 1.5rem;
+  width: 5rem;
+    
+}
+
+.unlist{
+  list-style: none;
+  padding-top: 0.019rem;
+  display: inline-flex;
+    
+    
+
+}
+.lis{
+     padding-right: 0.6rem;
+
+}
+
+
+.sec2{
+  margin-top: -605px;
+  
+  padding-left: 55%;
+}
+.sec1{
+  padding-left: 35%;
+}
+.row--2,.row--3,.row--4,.row--5,.row--6,.row--7,.row--8,.row--9,.row--10{
+
+
+}
+.seats{
+
+  display: inline-flex;
+}
+.seat_container{
+  background-position: center;
+  background-image: url("photos//sCin.jpg");
+  
+}
+
+
+footer{
+    background-color:#212f44;
+    width:100%;
+    height: 86px;
+    margin-top: -20px;
+    
+}
+
+p{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  animation-name: textc;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes textc{
+  from{color: white;}
+  to{color: #f2315a;}
+}
+
+
+@keyframes navbar{
+  from{background-image: url("photos//mbar.jpg");}
+  to{background-image: url("photos//sbar.jpg");}
+  
+}
+
+
+ol {
+  list-style :none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  
+}
+li{
+
+	padding-right: 1.5rem;
+}
+  
+
+  label {    
+    display: block;
+    position: relative;     
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 0;
+    background: #F42536;
+    border-radius: 5px;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+    line-height: 1.5rem;
+	width: 2rem;
+    
+   
+}
+
+
+
+
